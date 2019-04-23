@@ -14,7 +14,8 @@ class ContactController {
         const { name, phoneNumber } = req.body
 
         let contact = new Contact({
-            name, phoneNumber: Number(phoneNumber)
+            name,
+            phoneNumber: Number(phoneNumber)
         });
 
         return contact

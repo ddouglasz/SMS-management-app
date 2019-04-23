@@ -17,9 +17,11 @@ import mongoose from 'mongoose';
 let dev_db_url = process.env.MONGODB_URL;
 
 let mongoDB = process.env.MONGODB_URI || dev_db_url;
-mongoose.connect(mongoDB, {useNewUrlParser: true})
+mongoose.connect(mongoDB, { useNewUrlParser: true })
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 mongoose.connection.once('open', () => {
-    console.log('we are connected to mongoose')
+  console.log('we are connected to mongoose')
 });
 
 app.use(bodyParser.json());
@@ -27,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api', contact);
 
 // Setup a default catch-all route that sends back a welcome message in JSON format.
-app.get('*', (req, res) => res.status(200).send({
+app.get('*', (res) => res.status(200).send({
   message: 'Server up and running',
 }));
 
