@@ -91,7 +91,37 @@ class ContactController {
             })
     }
 
+    /** 
+     * @description test controller.
+     * @param {object} req - the sent request.
+     * @param {object} res - the expected response.
+     * @returns {object} - the return function.
+     */
     //update controller
+    // eslint-disable-next-line require-jsdoc
+    static updateContact(req, res) {
+        const { contactId } = req.params;
+        const updateObject = req.body;
+        Contact.findByIdAndUpdate({ _id: contactId }, { $set: updateObject })
+            .exec()
+            .then(() => {
+                    res.status(200).json({
+                    success: true,
+                    message: 'contact updated successfully',
+                    updateContact: updateObject,
+                });
+            })
+            .catch((error) => {
+                res.status(500).json({
+                    success: false,
+                    message: 'Server error, please try again',
+                    messag: error.message,
+                });
+            })
+    }
+
+    //delete controller 
+    
 }
 
 export default ContactController;
