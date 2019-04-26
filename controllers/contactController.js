@@ -80,7 +80,6 @@ class ContactController {
             if(contactDetail) {
                 return res.status(200).json({
                     success: true,
-                    message: 'contact found',
                     Contact: contactDetail
                 });
             }
