@@ -15,7 +15,7 @@ class ContactController {
 
         let contact = new Contact({
             name,
-            phoneNumber: Number(phoneNumber)
+            phoneNumber
         });
 
         return contact
