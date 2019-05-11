@@ -1,5 +1,5 @@
 {
-  "name": "SMS-management-app",
+  "name": "sms-management-app",
   "version": "1.0.0",
   "description": "This application simulates an sms management system",
   "main": "app.js",
