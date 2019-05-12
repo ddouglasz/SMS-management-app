@@ -32,12 +32,12 @@ npm run start:dev
 
 Type of request | route(endpoint)       | Description
 ----------------| ----------| --------------------
-POST   |api/v1/contact|Create a new contact
-GET   |api/v1/contacts|Get all contacts
-GET   |api/v1/:contactId|Get single contact
-PUT   |api/v1/:contactId|Update single contact
+POST     |api/v1/contact|Create a new contact
+GET      |api/v1/contacts|Get all contacts
+GET      |api/v1/:contactId|Get single contact
+PUT      |api/v1/:contactId|Update single contact
 DELETE   |api/v1/:contactId|Delete single contact
-POST   |/api/v1/sms|Create a new messages
-GET   |/api/v1/sms/allmessages|Get all messages
-GET   |/api/v1/sms/sent/:phoneNumber|Get sent sms
-GET   |/api/v1/sms/received/:phoneNumber|Get received sms
+POST     |/api/v1/sms|Create a new messages
+GET      |/api/v1/sms/allmessages|Get all messages
+GET      |/api/v1/sms/sent/:phoneNumber|Get sent sms
+GET      |/api/v1/sms/received/:phoneNumber|Get received sms
