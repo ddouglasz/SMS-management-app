@@ -19,11 +19,16 @@ npm install
 * Contact can delete sms
 * Contact can delete contacts and all sms associated with the contact
 
-## Run App(dummy-data)
-```bash
-npm run start:dev
-```
 
+###Setup
+
+* Clone the repository
+* Checkout to the `develop` branch
+* Run `npm i` to install all dependencies
+* Add a mongodb url to your `.env` file(see .env.exapmle file).
+* Run `npm start:dev` to start the app locally
+* Go to `localhost:8888` to access end points.
+* Run all tests and coverage using `npm run test a`
 
 ## API endpoints and functions
 
