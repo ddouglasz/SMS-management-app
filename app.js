@@ -29,9 +29,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/v1', route);
 
 // Setup a default catch-all route that sends back a welcome message in JSON format.
-app.get('*', (req, res) => res.status(200).send({
+app.get('/', (req, res) => res.status(200).send({
   message: 'Server up and running',
 }));
 
-// module.exports = app;
-export default app;
+module.exports = app;
+// export default app;
