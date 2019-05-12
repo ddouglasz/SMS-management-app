@@ -25,7 +25,6 @@ npm run start:dev
 ```
 
 
-```
 ## API endpoints and functions
 
  
