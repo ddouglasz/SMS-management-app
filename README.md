@@ -1,8 +1,6 @@
 
 # SMS-management-App# 
 
-Link to hosted app: [sms-management-app](https://random-phone-number-generatorr.herokuapp.com/)
-
 The sms management application (strictly API) is an application that simulates a system of how sms is managed between different Contact on a platform.
 
 
